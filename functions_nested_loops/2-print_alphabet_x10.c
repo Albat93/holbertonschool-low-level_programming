@@ -1,7 +1,8 @@
 #include "main.h"
-
 /**
- *print alphabet x10
+ * main - check the code.
+ *print alphabet x10.
+ * Return: Always 0.
  */
 
 void print_alphabet_x10(void)
