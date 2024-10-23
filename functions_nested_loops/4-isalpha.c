@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - check the code.
  * int _isalpha(int c) - check if c is lowercase or uppercase.
