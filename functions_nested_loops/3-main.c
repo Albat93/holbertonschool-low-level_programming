@@ -2,8 +2,9 @@
 
 /**
  * main - check the code.
- *
- * Return: Always 0.
+ * int _islower(int c) - check if c is lowercase.
+ * function that check for lowercase character.
+ * return - always 0
  */
 int main(void)
 {
