@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - check the code.
- *print alphabet x10.
+ * print alphabet x10.
  * Return: Always 0.
  */
 
