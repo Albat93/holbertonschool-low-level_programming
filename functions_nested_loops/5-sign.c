@@ -10,15 +10,15 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-_putchar(+);
+_putchar(43);
 }
 else if (n < 0)
 {
-_putchar(-);
+_putchar(45);
 }
 else if (n == 0)
 {
-_putchar(0);
+_putchar(48);
 }
 return (0);
 }
