@@ -6,12 +6,12 @@
 
 int _isalpha(int c)
 {
-if (test_isalpha(c))
+	if (test_isalpha(c))
 	{
-	return (1);
+		return (1);
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
