@@ -5,26 +5,40 @@
  * @n: character tested
  * Return: 0 success
  */
+#include <stdio.h>
+
 void print_to_98(int n)
 {
-int digit;
-
-if (n <= 98)
-{
-while (digit > 0)
-{
-_putchar(digit % 10 + '0');
-digit /= 10;
-}
-if (n < 98)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(n + 1);
-}
-else
-{
-_putchar('\n');
-}
-}
+	if (n <= 98)
+	{
+		for (; n <= 98; n++)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
+	}
 }
