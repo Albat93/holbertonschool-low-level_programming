@@ -1,5 +1,5 @@
 /**
- * void _jack_bauer - print minutes of jack day
+ * _jack_bauer - print minutes of jack day
  * Return: 0 success
  */
 
