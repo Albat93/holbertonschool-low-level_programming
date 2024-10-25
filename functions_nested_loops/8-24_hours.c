@@ -1,5 +1,5 @@
 /**
- * _jack_bauer - print minutes of jack day
+ * jack_bauer - print minutes of jack day
  * Return: 0 success
  */
 
