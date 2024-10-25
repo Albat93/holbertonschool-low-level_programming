@@ -1,7 +1,7 @@
 /**
  * _abs - print value of integer.
  * @n: check integer
- * return: 0 absolute or -1 not absolute
+ * Return: 0 absolute or -1 not absolute
  */
 
 
