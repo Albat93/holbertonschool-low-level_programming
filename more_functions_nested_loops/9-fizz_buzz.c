@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *
- *
+ * @i: check the number
+ * function to do fizzbuzz test
  */
 
 int main(void)
