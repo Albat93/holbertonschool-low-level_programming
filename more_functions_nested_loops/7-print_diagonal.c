@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * print_diagonal - draw a diagonal line
+ * @n: number of times the character should be print
+ */
 
 void print_diagonal(int n)
 {
