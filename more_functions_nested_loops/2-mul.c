@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *add - function multiplie two integers and returns the result
+ *mul - function multiplie two integers and returns the result
  *@a: integer 1
  *@b: integer 2
  * Return: 0 success
