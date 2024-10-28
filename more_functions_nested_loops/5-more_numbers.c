@@ -11,7 +11,7 @@ int counter;
 	{
 		for (c = 0; c <= 14; c++)
 		{
-			_putchar(c);
+			_putchar(c + '0');
 		}
 		_putchar('\n');
 	}
