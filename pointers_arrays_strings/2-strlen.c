@@ -1,6 +1,6 @@
 /**
  * _strlen - calc lenght of char
- * @i: char tested
+ * @s: test the char
  */
 
 int _strlen(char *s)
