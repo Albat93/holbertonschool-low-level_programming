@@ -3,7 +3,6 @@
  * swap_int - swap value of two integers
  * @a: is a variable with value
  * @b: is a variable with value
- * @tmp: stock temporarily value
  */
 
 void swap_int(int *a, int *b)
