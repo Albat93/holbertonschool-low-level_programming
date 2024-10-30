@@ -1,9 +1,8 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- * Main - check the code
- *
- * Return: Always 0.
+ * rev_string - print tring of char in reverse
+ * @s: character tested
  */
 
 void rev_string(char *s)
