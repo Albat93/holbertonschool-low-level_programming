@@ -3,7 +3,6 @@
 #include "3-puts.c"
 /**
  * puts2 - print every other character of a string
- * @i: function to start from first character
  * @str: character tested
  */
 
