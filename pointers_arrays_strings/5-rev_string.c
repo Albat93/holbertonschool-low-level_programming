@@ -1,24 +1,25 @@
 #include "main.h"
-
+#include "2-strlen.c"
 /**
- * main - check the code
+ * Main - check the code
  *
  * Return: Always 0.
  */
 
 void rev_string(char *s)
 {
-	int first, last;
+	int first = 0;
+	int last = _strlen(s) -1;
+	char tmp;
 
-	if (first >= last)
+	while (first < last)
 	{
-		return;
-	}
-	char tmp = s[first];
+	tmp = s[first];
 	s[first] = s[last];
 	s[last] = tmp;
 
-	_putchar(s, first + 1, last - 1);
+	first++;
+	last--;
 
-_putchar('\n');
+	}
 }
