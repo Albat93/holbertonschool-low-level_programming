@@ -4,6 +4,7 @@
  * _memset - fills memory with a constant byte
  * @s: adress of source
  * @n: number of octet to fill
+ * @b: char tested
  * Return: s
  */
 
