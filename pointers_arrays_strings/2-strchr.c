@@ -2,20 +2,23 @@
 
 /**
  * _strchr - locates character in a string
- * @s: pointer to the string
+ * @s: pointer of string source
  * @c: character to locate
- * Return: return to the string in pointer s
+ * Return: return s with character locate
  */
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	while (*s++)
 	{
 		if (*s == c)
 		{
 			return (s);
 		}
-	s++;
+		if (!*s)
+		{
+			return (0);
+		}
 	}
-	return (0);
+	return (s);
 }
