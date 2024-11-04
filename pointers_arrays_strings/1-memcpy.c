@@ -1,9 +1,10 @@
 #include "main.h"
 
-/*
+/**
  * _memcpy - copies memory area
- * @char d: destination file
- * @char s: source file
+ * @dest: destination file
+ * @src: source file
+ * @n: size of byte
  * Return: d
  */
 
@@ -14,7 +15,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (n--)
 	{
-		*d++ = * s++;
+		*d++ = *s++;
 	}
-	return (d);
+	return (s);
 }
