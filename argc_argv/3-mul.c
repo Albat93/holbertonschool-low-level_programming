@@ -1,16 +1,15 @@
-#include <stdlib.h> /* Pour la fonction atoi() */
-
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 /**
- * main - multiplie deux entiers passés en argument
- * @argc: Le nombre d'arguments
- * @argv: Le tableau des arguments
- * Return: 0 si succès, 1 si erreur
+ * main - multiplies two numbers
+ * @argc: all arguments
+ * @argv: array of arguments
+ * Return: 0 succes
  */
 int main(int argc, char *argv[])
 {
-	int num1;
-	int num2;
-	int result;
+	int num1, num2;
 
 	if (argc != 3)
 	{
@@ -21,9 +20,7 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 
-	result = num1 * num2;
-
-	printf("%d\n", result);
+	printf("%d\n", (num1 * num2));
 
 	return (0);
 }
