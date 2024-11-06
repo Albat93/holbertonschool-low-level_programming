@@ -1,43 +1,24 @@
 #include "main.h"
 /**
- * sqrt_helper - function to perform recursive search
- * @n: number check
- * @low: search in lower half
- * @high: search in upper half
- * Return: found square root
+ * checker - checks the input number from n to the base
+ * @n: number is squared and compared against base
+ * @base: base number to check
+ * Return: natural square root of number base
  */
-
-int sqrt_helper(int n, int low, int high)
+int checker(int n, int base)
 {
-	int mid = (low + high) / 2;
-	int mid_squared = mid * mid;
-
-	if (mid_squared == n)
-	{
-		return (mid);
-	}
-	else if (mid_squared < n)
-	{
-		return (sqrt_helper(n, mid + 1, high));
-	}
-	else
-	{
-		return (sqrt_helper(n, low, mid - 1));
-	}
+	if (n * n == base)
+		return (n);
+	if (n * n > base)
+		return (-1);
+	return (checker(n + 1, base));
 }
 /**
- * _sqrt_recursion - find the natural square root
- * @n: number check
- * Return: return -1 for negative numbers
+ * _sqrt_recursion - return the natural square root of a number n.
+ * @n: number to check for square roots.
+ * Return: the natural square root of number n
  */
-
 int _sqrt_recursion(int n)
 {
-	{
-		if (n < 0)
-		{
-			return (-1);
-		}
-		return (sqrt_helper(n, 0, n));
-	}
+	return (checker(1, n));
 }
