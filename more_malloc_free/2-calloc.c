@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * _calloc - function to allocate memory for an array
- * @nmemb: elements of the array
- * @size: size of each elements
- * Return: void*
+ * _calloc - allocate memory set to zero
+ * @nmemb: number of elements
+ * @size: the size of the memory
+ * Return: Nothing.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
