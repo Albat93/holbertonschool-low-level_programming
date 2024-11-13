@@ -3,9 +3,9 @@
 
 /**
  * create_array - create an array of char
- * @size: size of the char
- * @c: char specified
- * @Return: the char
+ * @size: unsigned int for size
+ * @c: char initialize
+ * Return: Null if size 0, else return size
  */
 char *create_array(unsigned int size, char c)
 {
