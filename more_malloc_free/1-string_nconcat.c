@@ -1,23 +1,21 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * string_nconcat - concatenates two strings
+ * string_nconcat - concatenation of two string
  * @s1: first string
  * @s2: second string
- * @n: limit of s2
- * Return: pointer to new space in memory or null
+ * @n: number of string 2
+ * Return: Pointer with space or null if it's an ampty string
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
+	int i = 0;
 	unsigned int j;
 	char *ptr;
 
 	if ((s1 == NULL) || (s2 == NULL))
 		s1 = "", s2 = "";
-	i = 0;
+
 	while (s1[i] != '\0')
 		i++;
 	ptr = malloc(sizeof(char) * (i + n + 1));
