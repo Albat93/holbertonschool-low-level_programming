@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - return pointer to newly allocated space in memory
- * which containt copy of string given as parameter
- * @str: copy of the string
- * @Return: Null if error, pointer to allocated space
+ * _strdup - copy a string with new allocate memory
+ * @str: pointer to a string
+ * Return: Null if str = Null else return pointer to str
  */
 
 char *_strdup(char *str)
