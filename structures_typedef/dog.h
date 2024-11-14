@@ -1,5 +1,5 @@
 /**
- * dog - type
+ * struct dog - type created
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
