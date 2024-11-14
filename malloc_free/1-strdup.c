@@ -21,10 +21,10 @@ char *_strdup(char *str)
 
 	buffer = malloc(sizeof(char) * (len + 1));
 
-	if (buffer == 0)
-	{
-		return (NULL);
-	}
+		if (buffer == 0)
+		{
+			return (NULL);
+		}
 	for (i = 0; str[i]; i++)
 		buffer[i] = str[i];
 
