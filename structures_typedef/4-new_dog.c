@@ -36,12 +36,12 @@ char *_strcpy(char *dest, char *src)
 	return (start);
 }
 /**
- * @brief
+ * new_dog - copy of the dog
  *
- * @param name
- * @param age
- * @param owner
- * @return dog_t*
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: return the new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -49,27 +49,29 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int len_name = _strlen(name);
 	int len_owner = _strlen(owner);
 	dog_t *cpy_dog;
-	{
+
 		cpy_dog = malloc(sizeof(dog_t));
 		if (cpy_dog == NULL)
 			return (NULL);
 
 		cpy_dog->name = malloc(sizeof(char) * (len_name + 1));
 		if (cpy_dog->name == NULL)
+		{
+			free(cpy_dog);
 			return (NULL);
+		}
 		_strcpy(cpy_dog->name, name);
 
 		cpy_dog->owner = malloc(sizeof(char) * (len_owner + 1));
 		if (cpy_dog->owner == NULL)
+		{
+			free(cpy_dog->name);
+			free(cpy_dog);
 			return (NULL);
+		}
 		_strcpy(cpy_dog->owner, owner);
 
 		cpy_dog->age = age;
 
 		return (cpy_dog);
-	}
-	free(cpy_dog->owner);
-	free(cpy_dog->name);
-	free(cpy_dog);
-	return (NULL);
 }
