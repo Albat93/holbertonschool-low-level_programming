@@ -7,6 +7,7 @@
  * @name: is a function
  * @f: pointer of function name
  */
+
 void print_name(char *name, void (*f)(char *))
 {
 	if (f == 0)
