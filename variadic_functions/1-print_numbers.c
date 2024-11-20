@@ -7,6 +7,7 @@
  * print_numbers - function that print numbers followed by new line
  * @n: number of arguments
  * @separator: the string to be printed between numbers
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
