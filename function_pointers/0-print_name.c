@@ -3,16 +3,16 @@
 
 /**
  * print_name - function that print the name
- *
  * @name: is a function
  * @f: pointer of function name
+ * Return: Void
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (f == 0)
 	{
-		return;
+		return ();
 	}
 	f(name);
 }
