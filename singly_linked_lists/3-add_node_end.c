@@ -1,11 +1,10 @@
 #include "lists.h"
 
 /**
- * @brief
- *
- * @param head
- * @param str
- * @return list_t*
+ * add_node_end - adds a new node at the end of a list_t list
+ * @head: head of the list
+ * @str: string to add at the end
+ * Return: a list_t value
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
