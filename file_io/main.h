@@ -1,7 +1,11 @@
 #ifndef GUARD_h
-#define GAURD_h
-#include <unistd.h>
+#define GUARD_h
+
+#include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
