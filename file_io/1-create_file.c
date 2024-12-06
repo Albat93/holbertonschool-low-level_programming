@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * create_file - Create a file object
- *
  * @filename: file name to open
  * @text_content: text content to put in the file
  * Return: 1 success
